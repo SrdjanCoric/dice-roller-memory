@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
 import { Trophy, HistoryIcon, BarChart3 } from "lucide-react";
 import axios from "axios";
-import config from "./config";
 
 const api = axios.create({
-  baseURL: config.API_BASE_URL,
+  baseURL: "", // Empty string will use relative URLs for both dev and prod
   timeout: 5000,
 });
 
